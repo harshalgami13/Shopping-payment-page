@@ -57,9 +57,74 @@
 .section2{
     padding: 50px 0;
 }
+.section2 .accordion-button::after{
+    content: none;
+}
+.section2 .accordion-button{
+    padding: 0;
+    display: block;
+}
+.section2 .accordion-item  .boxes{
+    padding: 15px !important;
+}
+.section2 .accordion-item {
+    background-color: #fff;
+    border: none;
+}
+.section2 .accordion-body .boxes2 p{
+    color: var(--secondary-text-color);
+}
+.section2 .accordion-body .boxes2{
+    padding: 25px;
+    border: 1px solid #c7c7c7;
+    text-align: justify;
+}
+.section2 .accordion-body .boxes2 form ul{
+    justify-content: space-between;
+}
+.section2 .accordion-body .boxes2 form ul .form-check-input{
+    box-shadow: none;
+    border-color: #a7a7a7 !important;
+}
+.section2 .accordion-body .boxes2 form ul .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color) !important;
+}
+
+.section2 .accordion-body .boxes2 form ul>li{
+    display: grid;
+    align-content: center;
+}
+.section2 .accordion-body .boxes2 form ul>li>a{
+    color: var(--secondary-text-color);
+}
+.section2 .accordion-body .boxes2 form>input{
+    padding: 8px 15px;
+    margin: 15px 0;
+    width: 100%;
+    border: 1px solid #c7c7c7;
+    outline: none;
+    display: block;
+}
+.section2 .accordion-body .boxes2 form button{
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 0px;
+    box-shadow: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
 .section2 .boxes{
     background-color: var(--light-bg-color);
-    padding: 10px 15px;
+    padding: 13px 15px;
     color: var(--secondary-text-color);
     font-size: 15px;
     margin: 15px 0;
@@ -93,6 +158,24 @@
     font-weight: 700;
     font-size: 20px;
     padding: 22px 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+.accordion-button{
+    outline: 1px solid transparent !important;
+}
+.accordion-body {
+    padding: 0px 0px 1rem 0;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: none;
 }
 .section3 .form-control{
     margin: 15px 0 !important;
@@ -217,7 +300,6 @@
 .footer2 .left-side{
     font-size: 17px;
     display: grid;
-    text-align: center;
     align-content: center;
     font-weight: 300;
 }
@@ -277,8 +359,8 @@ html{
     border-radius: 15px;
 }
 ::selection{
-    background-color: #5e5e5a;
-    color: var(--white-color);
+    background-color: var(--primary-color);
+    color: white;
 }
 :root{
     --light-bg-color: #eff1ff;
